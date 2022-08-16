@@ -1,17 +1,14 @@
-const mensaje = () => {
-    alert( `Hola a todos en UK`);
-}
-
-
-
 const primos = () => {
-    for(let i = 1; i < 100; i++) {
-        
+
+    const primoContenedor = document.querySelector('#primo-contenedor');
+    for(let i = 1; i < 100; i+=2) {
+        let numeros = document.createElement('span');
+        numeros.innerText =  `  ${i}  -  `;
+        primoContenedor.appendChild(numeros);
     }
 }
 
 
 
 
-
-mensaje();
+primos();
