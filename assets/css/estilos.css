@@ -14,3 +14,20 @@ h2{
     font-size:18px;
     margin: 12px;
 }
+
+.span-tipo{
+    font-size:18px;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.span-typeof{
+    font-size:15px;
+    font-weight: bold;
+    margin-right: 6px;
+    margin-left: 12px;
+}
+
+.tipo-container div{
+    margin: 12px auto;
+}
