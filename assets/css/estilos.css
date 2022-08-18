@@ -20,7 +20,7 @@ h2{
     font-weight: bold;
     margin-right: 6px;
 }
-
+S
 .span-typeof{
     font-size:15px;
     font-weight: bold;
@@ -30,4 +30,25 @@ h2{
 
 .tipo-container div{
     margin: 12px auto;
+}
+
+a{
+    font-size:18px;
+    margin: 6px 0px;
+}
+
+li{
+    margin: 6px 0px;
+    font-size:18px;
+}
+
+.span-typeof{
+    margin-left:12px;
+    margin-right:6px;
+    font-weight: 600;
+}
+
+
+footer{
+    margin-top:42px;
 }
