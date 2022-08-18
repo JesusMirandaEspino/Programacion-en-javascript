@@ -1,0 +1,54 @@
+h1{
+    font-size:48px;
+    margin: 21px;
+}
+
+
+h2{
+    font-size:36px;
+    margin: 21px;
+}
+
+
+.numero-primo{
+    font-size:18px;
+    margin: 12px;
+}
+
+.span-tipo{
+    font-size:18px;
+    font-weight: bold;
+    margin-right: 6px;
+}
+S
+.span-typeof{
+    font-size:15px;
+    font-weight: bold;
+    margin-right: 6px;
+    margin-left: 12px;
+}
+
+.tipo-container div{
+    margin: 12px auto;
+}
+
+a{
+    font-size:18px;
+    margin: 6px 0px;
+}
+
+li{
+    margin: 6px 0px;
+    font-size:18px;
+}
+
+.span-typeof{
+    margin-left:12px;
+    margin-right:6px;
+    font-weight: 600;
+}
+
+
+footer{
+    margin-top:42px;
+}
