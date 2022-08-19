@@ -1,3 +1,11 @@
+const dollarValue = document.querySelector('#dollarValue');
+const updateDollar = document.querySelector('#updateDollar');
+
+
+dollarValue.innerText = '20';
+
+console.log(dollarValue);
+
 
 const getValorDollar = () => {
 
@@ -7,7 +15,23 @@ const getValorDollar = () => {
 
     fetch(`${url}${apiKey}`)
         .then(response => response.json())
-        .then(data => console.log(data.rates.MXN));
+        .then(data =>  {
+            if(data.rates.MXN){
+                const respValor = Number(data.rates.MXN).toFixed(2);
+                dollarValue.innerText = respValor.toString();
+            }else{
+                dollarValue.innerText =  '20';
+            }
+            
+        });
 
 }
 
+
+
+const convert = () => {
+    
+}
+
+
+updateDollar.addEventListener( 'click',  getValorDollar);
