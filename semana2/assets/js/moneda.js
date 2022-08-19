@@ -1,10 +1,12 @@
 const dollarValue = document.querySelector('#dollarValue');
 const updateDollar = document.querySelector('#updateDollar');
-
+const formConvert = document.querySelector('#formConvert');
+const dollar = document.querySelector('#monedaDollar');
+const peso = document.querySelector('#monedaPeso');
+const cantidad = document.querySelector('#cantidad');
 
 dollarValue.innerText = '20';
 
-console.log(dollarValue);
 
 
 const getValorDollar = () => {
@@ -29,9 +31,19 @@ const getValorDollar = () => {
 
 
 
-const convert = () => {
+const convert = (e) => {
+    e.preventDefault();
+    let valorActualDollar = Number(updateDollar.innerText);
+    console.log(dollar.checked);
+    console.log(peso.checked);
+    console.log(cantidad.value);
+
     
+
+
+
 }
 
 
 updateDollar.addEventListener( 'click',  getValorDollar);
+convertBtn.addEventListener( 'click',  convert);

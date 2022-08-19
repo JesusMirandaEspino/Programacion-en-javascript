@@ -69,28 +69,28 @@
 
         <section class="fila" >
 
-                <form class="contenedor1 tipo-container">
+                <form class="contenedor1 tipo-container"  id="formConvert">
                     <div class="col-full-12 col-12 col-tab-big-12 col-tablet-12 col-tab-small-12 col-land-12 col-smarth-12">
-                        <label for="peso">Ingresa la cantidad a convertir</label>
+                        <label for="cantidad">Ingresa la cantidad a convertir</label>
                     </div>
                     <div class="col-full-12 col-12 col-tab-big-12 col-tablet-12 col-tab-small-12 col-land-12 col-smarth-12">
-                        <input  type="text" name="peso" id="peso">
+                        <input  type="number" name="cantidad" id="cantidad">
                     </div>
 
                     <div class="col-full-12 col-12 col-tab-big-12 col-tablet-12 col-tab-small-12 col-land-12 col-smarth-12">
                         <div class="col-media">
-                            <input type="radio" name="convertDollar" value="Dollar">
+                            <input type="radio" id="monedaDollar" name="moneda" value="Dollar">
                             <p>Dollar a Peso</p>
                         </div>
                         <div class="col-media">
-                            <input type="radio" name="convertPeso" value="Peso">
+                            <input type="radio" id="monedaPeso" name="moneda" value="Peso">
                             <p>Peso a Dollar</p>
                         </div>
                     </div>
 
 
                     <div class="col-full-12 col-12 col-tab-big-12 col-tablet-12 col-tab-small-12 col-land-12 col-smarth-12">
-                        <button type="submit">Convertir</button>
+                        <button id="convertBtn" type="submit">Convertir</button>
                     </div>
 
 
