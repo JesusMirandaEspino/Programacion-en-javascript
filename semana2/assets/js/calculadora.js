@@ -1,4 +1,4 @@
-//  referencia https://denisseestrada.com/calculadora-con-javascript/
+
 
 const uno = document.querySelector('#uno');
 const dos = document.querySelector('#dos');
