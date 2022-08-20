@@ -52,3 +52,22 @@ li{
 footer{
     margin-top:42px;
 }
+
+
+.calculadora button{
+    margin: 12px;
+    font-size: 24px;
+}
+
+.resultado-container{
+    height:48px;
+}
+
+#resultado{
+    font-size:24px;
+}
+
+.vista-operacion{
+    margin-top:36px;
+    font-size:24px;
+}

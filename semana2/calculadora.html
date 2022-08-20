@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<!-- **************************  -->
+<!-- **************************  -->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Jesus Miranda">
+<!-- **************************  -->
+<!-- **************************  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="INDEX,FOLLOW">
+<!-- **************************  -->
+<!-- **************************  -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+<!-- **************************  -->
+<!-- **************************  -->    
+<link rel="icon" type="image/png" href="">
+<!-- **************************  -->
+<!-- **************************  -->
+    <title>Programacion en Javascript</title>
+
+    
+</head>
+<body>
+    
+<!-- **************************  -->
+<!-- **************************  -->
+    <header>
+        <section class="fila" >
+            <div class="contenedor1">
+                <div class="col-full-12 col-12 col-tab-big-12 col-tablet-12 col-tab-small-12 col-land-12 col-smarth-12">
+                    <h1>Tipo de cambio</h1>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+
+<!-- **************************  -->
+<!-- **************************  -->
+
+
+
+    <main>
+
+
+
+
+            <section class="fila">
+
+                    <div class="resultado-container contenedor2">
+                        <div class="col-full-12 col-12 col-tab-big-12 col-tablet-12 col-tab-small-12 col-land-12 col-smarth-12">
+                            <h4 id ="resultado"></h4>
+                        </div>
+                    </div>
+
+
+                        <div class="calculadora contenedor2">
+
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="siete">7</button>
+                            </div>
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="ocho">8</button>
+                            </div>
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="nueve">9</button>
+                            </div>
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="division">/</button>
+                            </div>
+
+                        </div>
+
+                        <div class="calculadora contenedor2">
+
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="cuatro">4</button>
+                            </div>
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="cinco">5</button>
+                            </div>
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="seis">6</button>
+                            </div>
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="multiplicacion">*</button>
+                            </div>
+
+                        </div>
+                        <div  class="calculadora contenedor2">
+    
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="uno">1</button>
+                            </div>
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="dos">2</button>
+                            </div>
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="tres">3</button>
+                            </div>
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="resta">-</button>
+                            </div>
+                        </div>
+
+                        <div  class="calculadora contenedor2">
+
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="igual">=</button>
+                            </div>
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="reset">C</button>
+                            </div>
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="cero">0</button>
+                            </div>
+                            <div class="col-full-3 col-3 col-tab-big-3 col-tablet-3 col-tab-small-3 col-land-3 col-smarth-3">
+                                <button id="suma">+</button>
+                            </div>
+                        </div>
+
+                        <div  class="calculadora contenedor2 vista-operacion">
+
+                            <div class="col-full-12 col-12 col-tab-big-12 col-tablet-12 col-tab-small-12 col-land-12 col-smarth-12">
+                                <h4>Operacion</h4>
+                            </div>
+                            <div class="col-full-3 col-4 col-tab-big-4 col-tablet-4 col-tab-small-4 col-land-4 col-smarth-4">
+                                <h5 id="operadorX"></h5>
+                            </div>
+                            <div class="col-full-3 col-4 col-tab-big-4 col-tablet-4 col-tab-small-4 col-land-4 col-smarth-4">
+                                <h5 id="operadorTo"></h5>
+                            </div>
+                            <div class="col-full-3 col-4 col-tab-big-4 col-tablet-4 col-tab-small-4 col-land-4 col-smarth-4">
+                                <h5 id="operadorY"></h5>
+                            </div>
+                        </div>
+
+
+            </section>
+
+
+
+
+    </main>
+
+
+<!-- **************************  -->
+<!-- **************************  -->
+    <footer>
+
+
+    </footer>
+
+
+
+</body>
+<script src="assets/js/calculadora.js"></script>
+</html>
