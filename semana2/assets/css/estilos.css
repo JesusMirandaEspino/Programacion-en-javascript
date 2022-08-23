@@ -71,3 +71,56 @@ footer{
     margin-top:36px;
     font-size:24px;
 }
+
+img{
+    width:80%;
+    transition:all 0.6s ease;
+}
+
+.img-container1{
+    transition: all 0.6s ease;
+    cursor:pointer;
+}
+
+.img-container2{
+    transition: all 0.6s ease;
+    cursor:pointer;
+}
+
+.img-container3{
+    transition:all 0.6s ease;
+    cursor:pointer;
+}
+
+
+.img-hover:hover{
+    box-shadow: 0px 0px 8px 2px #000000;
+}
+
+
+.btn-cal{
+    padding:18px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    background-color: #b9eeb9;
+
+}
+
+.btn-hover{
+    transition: all 0.6s ease;
+}
+
+
+.btn-hover:hover{
+    background-color: #6fad6f;
+}
+
+
+.bottom-container{
+    margin-bottom:30px;
+}
+
+
+.text-moneda{
+    margin: 0px 6px;
+}

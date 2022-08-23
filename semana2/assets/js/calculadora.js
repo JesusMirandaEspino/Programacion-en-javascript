@@ -19,6 +19,9 @@ const resta = document.querySelector('#resta');
 const multiplicacion = document.querySelector('#multiplicacion');
 const division = document.querySelector('#division');
 const igual = document.querySelector('#igual');
+const error = document.querySelector('#error');
+
+
 
 let limitador = [];
 
@@ -123,7 +126,14 @@ division.addEventListener('click', () => {
 igual.addEventListener('click', () => {
     operandoY = resultado.textContent;
     operadorYVista.innerText = operandoY;
+    igual.disabled = true;
     resolver();
+
+
+
+        
+
+
 });
 
 
@@ -131,6 +141,7 @@ igual.addEventListener('click', () => {
 
 const limpiar = () => {
     resultado.textContent = '';
+    igual.disabled = false;
 }
 
 
@@ -140,6 +151,7 @@ const  resetear = () => {
     operandoY = 0;
     operacion = '';
     limitador = [];
+    igual.disabled = false;
 }
 
 
@@ -164,16 +176,24 @@ const resolver = () => {
     resultado.textContent = res;
 }
 
-const verificarDobleOperacion = () => {
-    if(limitador.length > 1 ){
-        alert('Por el momento solo se puede realizar una operacion a la vez');
-        resetear();
-    }
-}
-
-
 const limpiarVista = () => {
     operadorXVista.innerText = '';
     operadorToVista.innerText = '';
     operadorYVista.innerText = '';
 }
+
+const verificarDobleOperacion = () => {
+    if(limitador.length > 1 ){
+        error.innerText = 'Por el momento solo se puede realizar una operacion a la vez';
+        resetear();
+
+        setTimeout(  () => {
+            limpiarVista();
+            error.innerText = ''
+        }, 3000);
+
+
+    }
+}
+
+
