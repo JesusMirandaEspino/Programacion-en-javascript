@@ -47,8 +47,9 @@ const convert = (e) => {
             return;
         }
 
-        const conversion = Number(cantidad.value) / valorActualDollar;
-        resultado.innerText = `El resultado es ${conversion} Dollar(es)`;
+        const conversion = Number(cantidad.value) * valorActualDollar;
+        let letraPeso = ( conversion > 1 ) ? 'Pesos' : 'Peso';
+        resultado.innerText = `El resultado es ${conversion} ${letraPeso}`;
         return;
     }
 
@@ -58,8 +59,9 @@ const convert = (e) => {
             return;
         }
 
-        const conversion = Number(cantidad.value) * valorActualDollar;
-        resultado.innerText = `El resultado es ${conversion} Dollar(es)`;
+        const conversion = Number(cantidad.value) / valorActualDollar;
+        let letraDollar = ( conversion > 1 ) ? 'Dollares' : 'Dollar';
+        resultado.innerText = `El resultado es ${conversion} ${letraDollar}`;
 
     }
 
