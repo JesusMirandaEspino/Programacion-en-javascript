@@ -498,3 +498,14 @@ a {
     text-decoration: none;
 
 }
+
+
+/* Jesus Miranda add img default init
+    a decoration none
+   v2.2.1-modified | 04102020
+   License: none (public domain)
+*/
+
+img{
+    max-width: 100%;
+}
